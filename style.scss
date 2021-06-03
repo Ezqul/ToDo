@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$main-green: #ccf381;
+$main-blue: #4831d4;
+
+@mixin borderBlack {
+    border: 2px solid black;
+}
+
+@mixin borderBottomWhite {
+    border-bottom: 1px solid white;
+}
+
+@mixin lato400 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+}
+
+.list-container {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    top: -20px;
+
+    .list-title {
+        position: relative;
+        top: 20px;
+        .title-svg {
+            height: 40px;
+            width: 400px;
+            fill: darken($color: $main-blue, $amount: 30%);
+            display: block;
+            margin: 0 auto;
+        }
+        .title-form {
+            .title-input {
+                background: none;
+                border: none;
+                @include lato400;
+                position: relative;
+                bottom: 30px;
+                font-size: 1.1em;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .input-form {
+        height: 50px;
+        display: flex;
+        @include borderBottomWhite;
+
+        .form-text-input {
+            border: none;
+            padding: 10px;
+            flex: 1;
+            background: $main-blue;
+            color: white;
+            @include lato400;
+            font-size: 1.1em;
+        }
+        .form-text-input::placeholder {
+            color: white;
+            opacity: 0.7;
+        }
+        .form-text-submit {
+            padding: 5px;
+            border: none;
+            width: 50px;
+            background: $main-green;
+        }
+    }
+
+    .items-container {
+        .item {
+            background: $main-blue;
+            color: white;
+            display: grid;
+            grid-template-columns: auto 1fr repeat(3, auto);
+            align-items: center;
+            padding: 10px;
+            @include borderBottomWhite;
+            .item-text {
+                @include lato400;
+                font-size: 1.2em;
+                text-align: left;
+                position: relative;
+            }
+            .item-text::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background: red;
+                top: 50%;
+                left: -5px;
+                height: 2px;
+                width: 0;
+                transition: width 0.3s ease-in-out;
+                will-change: width;
+            }
+            .check::after {
+                width: calc(100% + 10px);
+            }
+            .item-btn {
+                background: none;
+                border: none;
+                padding: 5px;
+                margin: auto 5px;
+            }
+        }
+    }
+    .delete-all {
+        .delete-all-svg {
+            margin: 0 auto;
+            fill: #FF4136;
+            display: block;
+            height: 25px;
+            width: 200px;
+            .delete-all-path {
+                cursor: pointer;
+            }
+        }
+        .delete-all-text {
+            @include lato400;
+            color: white;
+            position: relative;
+            bottom: 22px;
+            right: 2px;
+            cursor: pointer;
+        }
+        .delete-all-icon {
+            font-size: 1.1em;
+            position: relative;
+            bottom: 21px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.colorWhite {
+    color: white;
+}
+
+.colorGrey {
+    color: grey;
+}

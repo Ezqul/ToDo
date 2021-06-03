@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list-container {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+
+.list-container .list-title {
+  position: relative;
+  top: 20px;
+}
+
+.list-container .list-title .title-svg {
+  height: 40px;
+  width: 400px;
+  fill: #1d1359;
+  display: block;
+  margin: 0 auto;
+}
+
+.list-container .list-title .title-form .title-input {
+  background: none;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  position: relative;
+  bottom: 30px;
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+}
+
+.list-container .input-form {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.list-container .input-form .form-text-input {
+  border: none;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #4831d4;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.list-container .input-form .form-text-input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.list-container .input-form .form-text-input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.list-container .input-form .form-text-input::-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.list-container .input-form .form-text-input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.list-container .input-form .form-text-submit {
+  padding: 5px;
+  border: none;
+  width: 50px;
+  background: #ccf381;
+}
+
+.list-container .items-container .item {
+  background: #4831d4;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr (auto)[3];
+      grid-template-columns: auto 1fr repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.list-container .items-container .item .item-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: left;
+  position: relative;
+}
+
+.list-container .items-container .item .item-text::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: red;
+  top: 50%;
+  left: -5px;
+  height: 2px;
+  width: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  will-change: width;
+}
+
+.list-container .items-container .item .check::after {
+  width: calc(100% + 10px);
+}
+
+.list-container .items-container .item .item-btn {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin: auto 5px;
+}
+
+.list-container .delete-all .delete-all-svg {
+  margin: 0 auto;
+  fill: #FF4136;
+  display: block;
+  height: 25px;
+  width: 200px;
+}
+
+.list-container .delete-all .delete-all-svg .delete-all-path {
+  cursor: pointer;
+}
+
+.list-container .delete-all .delete-all-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  bottom: 22px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.list-container .delete-all .delete-all-icon {
+  font-size: 1.1em;
+  position: relative;
+  bottom: 21px;
+  color: white;
+  cursor: pointer;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorGrey {
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */

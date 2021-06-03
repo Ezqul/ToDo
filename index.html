@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./graphics/icon_white.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script async src="app.js"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="list-container">
+        <div class="list-title">
+            <svg viewBox="0 0 400 50" class="title-svg">
+                <path class="svg-xd title-path" d="M 50 0 L 350 0 L 400 50 L 0 50 L 50 0 "></path>
+            </svg>
+            <form class="title-form">
+                <input type="text" class="title-input" placeholder="title">
+            </form>
+        </div>
+        <form class="input-form">
+            <input type="text" class="form-text-input" placeholder="Enter task to add...">
+            <button type="submit" class="form-text-submit"><i class="fas fa-plus fa-2x add-btn"></i></button>
+        </form>
+        <div class="items-container"></div>
+    </div>
+</body>
+</html>
