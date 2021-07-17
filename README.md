@@ -1,4 +1,4 @@
-# ToDo
+# ToDo List
 
 Tech stack: HTML, Sass, Javascript
 
