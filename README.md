@@ -1,5 +1,5 @@
 # ToDo List
 
-Tech stack: HTML, Sass, Javascript
+Tech stack: HTML, SCSS, Javascript
 
 You can check how it works on Netlify: https://ezqtodo.netlify.app/
